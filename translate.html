@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+
+    <title>GOT Characters</title>
+  </head>
+  
+  <body>
+    <div id="content">
+        <header>
+            <nav-component></nav-component>
+        </header>
+        <main>
+            <h1 class="main-title"> Coming Soon </h1>
+        </main>
+        <footer>
+            <footer-component></footer-component>
+        </footer>
+    </div>
+
+    <script src="./components/nav-component.js"></script>
+    <script src="./components/footer-component.js"></script>
+    <script>
+    new Vue({
+        el: "#content",
+        components: {'nav-component': NavComponent, 'footer-component': FooterComponent },
+    });
+    </script>
+</body>

@@ -1,0 +1,176 @@
+
+/*----------------------------------------------------
+style.css
+@Author: Noemi Leon
+Table of Content
+
+---------------------------------------------------- */
+
+@font-face {
+    font-family: GameOfThrones;
+    src: url(./assets/fonts/Game\ of\ Thrones.ttf);
+}  
+@font-face {
+    font-family: Aquifer;
+    src: url(./assets/fonts/Aquifer.ttf);
+}  
+:root{
+    --red-wine: #a72c11;
+    --grey-light:  #808080;
+}
+
+/* ------ GENERAL ------ */
+.font-red{
+    color: var(--red-wine);
+}
+/* ------ NAV ------ */
+body{
+    font-family: Aquifer;
+}
+footer, header{
+    font-family: GameOfThrones;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    color: inherit;
+}
+.nav-link:hover{
+    color: var(--red-wine);
+}
+nav .got-logo{
+    height: 80px;
+    width: 200px;
+}
+
+/* ------ MAIN ------ */
+main{
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.main-title{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-family: GameOfThrones;
+}
+.main-subtitle{
+    color: var(--grey-light);
+    font-size: 28px;
+    text-align: center;
+    font-family: GameOfThrones;
+}
+.body-row{
+    position: relative;
+}
+.body-img{
+    width: 218px;
+}
+.prev-area{
+    width: 50%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.next-area{
+    width: 50%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+.prev-btn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: inherit;
+    width: 2rem;
+    background-color: rgba(142, 166, 193, 0.2);
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+.next-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: inherit;
+    width: 2rem;
+    background-color: rgba(142, 166, 193, 0.2);
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+.btn-area{
+    padding: 1rem;
+}
+.btn-area .btn-container{
+    width: 320px;
+}
+.btn-area .btn-container > button{
+    width: 100px;
+}
+#about-area, #quote-area{
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.quote-list > li{
+    margin-bottom: 12px;
+}
+.about-p {
+    font-size: 18px;
+}
+.about-p > b{
+    font-size: 20px;
+}
+.about-titles{
+    list-style: none;
+    padding-left: 0;
+}
+.about-selected{
+    animation-name: borderFade;
+    animation-duration: 0.5s;
+}
+@keyframes borderFade {
+    0% {
+        border: 6px solid var(--red-wine);
+    }
+    50%{
+        border: 3px solid var(--red-wine);
+    }
+    100% {
+        border: 0px solid var(--red-wine);
+    }
+}
+.spinner-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red-spinner{
+    color: var(--red-wine);
+    width: 8rem;
+    height: 8rem;
+}
+.about{
+    overflow:hidden;
+    transition:transform 0.3s ease-out;
+    height:auto;
+    transform:scaleX(0);
+    transform-origin:left;
+}
+.area-active {
+    transform:scaleX(1);
+}
+.close-area{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    color: grey;
+    font-size: 4rem;
+}
