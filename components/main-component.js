@@ -32,7 +32,7 @@ const MainComponent = {
                         <div class="btn-container d-flex justify-content-between">
                             <button class="btn btn-light" @click="randomAll()"> Random </button>
                             <button id="about-btn" class="btn btn-light" @click="aboutToggle();"> About </button>
-                            <button class="btn btn-light"> Download </button>
+                            <button class="btn btn-light" disabled> Download </button>
                         </div>
                     </div>
                 </div>
