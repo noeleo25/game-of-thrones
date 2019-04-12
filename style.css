@@ -40,7 +40,7 @@ footer, header{
     color: var(--red-wine);
 }
 nav .got-logo{
-    height: 80px;
+    height: 88px;
     width: 200px;
 }
 
@@ -131,10 +131,10 @@ main{
     list-style: none;
     padding-left: 0;
 }
-.about-selected{
+/*.about-selected{
     animation-name: borderFade;
     animation-duration: 0.5s;
-}
+}*/
 @keyframes borderFade {
     0% {
         border: 6px solid var(--red-wine);
