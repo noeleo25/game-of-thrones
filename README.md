@@ -1,5 +1,6 @@
-# Game of thrones encyclopedia
+# Game of thrones encyclopedia :snowflake:
 *Developed with Vue.js and Bootstrap 4*
+
 Demo: https://noemileon.dev/game-of-thrones/
 
 Demonstrates progressive capacities of Vue.js:
@@ -19,5 +20,5 @@ Demonstrates progressive capacities of Vue.js:
 **Data**
 * bodies.js: Contains heads, middles and foots areas of each character, with attributes: id, name, src, type, and quotes.
 
-**TODO**
+**TODO:**
 Translate area.
