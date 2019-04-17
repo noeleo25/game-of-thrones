@@ -1,4 +1,4 @@
-# Game of thrones encyclopedia :snowflake:
+# Game of thrones encyclopedia :snowflake: :crown:
 *Developed with Vue.js and Bootstrap 4*
 
 Demo: https://noemileon.dev/game-of-thrones/
